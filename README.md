@@ -1,11 +1,10 @@
 # Kotlin-RoadMap `v1.0.0-alpha01`
 
-Kotlin v1.9.22
+**Kotlin v1.9.22**
 
-# 1. Types
+## 1. Types
 
-### **Numbers**
-
+### Numbers
 - Integer types
 - Floating-point types
 - Literal constants for numbers
@@ -16,27 +15,24 @@ Kotlin v1.9.22
     - Bitwise operations
     - Floating-point numbers comparison
 
-### **Unsigned integer types**
-
+### Unsigned integer types
 - Unsigned arrays and ranges
 - Unsigned integers literals
 - Use cases
     - Non-goals
 
-### **Booleans**
+### Booleans
 
-### **Characters**
+### Characters
 
-### **Strings**
-
+### Strings
 - String literals
     - Escaped strings
     - Multiline strings
 - String templates
 - String formatting
 
-### **Arrays**
-
+### Arrays
 - When to use arrays
 - Create arrays
     - Nested arrays
@@ -50,19 +46,17 @@ Kotlin v1.9.22
     - Convert arrays to collections
 - Primitive-type arrays
 
-### **Type checks and casts**
-
+### Type checks and casts
 - is and !is operators
 - Smart casts
 - "Unsafe" cast operator
 - "Safe" (nullable) cast operator
 
-===========================================================================
+---
 
-# 2. Control Flow
+## 2. Control Flow
 
-### **Conditions and loops**
-
+### Conditions and loops
 - If expression
 - When expression
 - For loops
@@ -70,14 +64,10 @@ Kotlin v1.9.22
 - Break and continue in loops
 
 ### Returns and jumps
-
-- Returns and jumps
 - Break and continue labels
 - Return to labels
 
 ### Exceptions
-
-- Exceptions
 - Exception classes
     - Try is an expression
 - Checked exceptions
@@ -85,19 +75,15 @@ Kotlin v1.9.22
 - Java interoperability
 
 ### Packages and imports
-
-- Packages and imports
 - Default imports
 - Imports
 - Visibility of top-level declarations
 
-===========================================================================
+---
 
-# 3. Functions
+## 3. Functions
 
-# **Functions**
-
-- Functions
+### Functions
 - Function usage
     - Parameters
     - Default arguments
@@ -113,10 +99,8 @@ Kotlin v1.9.22
 - Generic functions
 - Tail recursive functions
 
-# **Lambdas**
-
+### Lambdas
 - Higher-order functions and lambdas
-- Higher-order functions
 - Function types
     - Instantiating a function type
     - Invoking a function type instance
@@ -132,18 +116,14 @@ Kotlin v1.9.22
     - Closures
     - Function literals with receiver
  
-# **Inline functions**
-
-- Inline functions
+### Inline functions
 - noinline
 - Non-local returns
 - Reified type parameters
 - Inline properties
 - Restrictions for public API inline functions
 
-# **Operator overloading**
-
-- Operator overloading
+### Operator overloading
 - Unary operations
     - Unary prefix operators
     - Increments and decrements
@@ -158,13 +138,11 @@ Kotlin v1.9.22
     - Property delegation operators
 - Infix calls for named functions
 
-# **Builders**
-
+### Builders
 - Type-safe builders
 - How it works
 - Scope control: @DslMarker
 - Full definition of the com.example.html package
-
 - Using builders with builder type inference
 - Writing your own builders
     - Requirements for enabling builder inference
@@ -173,10 +151,11 @@ Kotlin v1.9.22
     - Postponed type variables
     - Contributing to builder inference results
 
-===========================================================================
+---
 
-# 4. Classes
+## 4. Classes
 
+### Basics
 - Constructors
     - Secondary constructors
 - Creating instances of classes
@@ -185,17 +164,14 @@ Kotlin v1.9.22
 - Abstract classes
 - Companion object
 
-# **Inheritance**
-
+### Inheritance
 - Overriding methods
 - Overriding properties
 - Derived class initialization order
 - Calling the superclass implementation
 - Overriding rules
 
-# **Properties**
-
-- Properties
+### Properties
 - Declaring properties
 - Getters and setters
     - Backing fields
@@ -206,33 +182,25 @@ Kotlin v1.9.22
 - Overriding properties
 - Delegated properties
 
-# **Interfaces**
-
-- Interfaces
+### Interfaces
 - Implementing interfaces
 - Properties in interfaces
 - Interfaces Inheritance
 - Resolving overriding conflicts
 
-# **Functional (SAM) interfaces**
-
-- Functional (SAM) interfaces
+### Functional (SAM) interfaces
 - SAM conversions
 - Migration from an interface with constructor function to a functional interface
 - Functional interfaces vs. type aliases
 
-# **Visibility modifiers**
-
-- Visibility modifiers
+### Visibility modifiers
 - Packages
 - Class members
     - Constructors
     - Local declarations
 - Modules
 
-# **Extensions**
-
-- Extensions
+### Extensions
 - Extension functions
 - Extensions are resolved statically
 - Nullable receiver
@@ -242,24 +210,18 @@ Kotlin v1.9.22
 - Declaring extensions as members
 - Note on visibility
 
-# **Data classes**
-
-- Data classes
+### Data classes
 - Properties declared in the class body
 - Copying
 - Data classes and destructuring declarations
 - Standard data classes
 
-# **Sealed classes and interfaces**
-
-- Sealed classes and interfaces
+### Sealed classes and interfaces
 - Location of direct subclasses
     - Inheritance in multiplatform projects
 - Sealed classes and when expression
 
-# **Generics: in, out, where**
-
-- Generics: in, out, where
+### Generics: in, out, where
 - Variance
     - Declaration-site variance
 - Type projections
@@ -274,22 +236,16 @@ Kotlin v1.9.22
     - Unchecked casts
 - Underscore operator for type arguments
 
-# **Nested and inner classes**
-
-- Nested and inner classes
+### Nested and inner classes
 - Inner classes
 - Anonymous inner classes
 
-# **Enum classes**
-
-- Enum classes
+### Enum classes
 - Anonymous classes
 - Implementing interfaces in enum classes
 - Working with enum constants
 
-# **Inline value classes**
-
-- Inline value classes
+### Inline value classes
 - Members
 - Inheritance
 - Representation
@@ -298,9 +254,7 @@ Kotlin v1.9.22
 - Inline classes vs type aliases
 - Inline classes and delegation
 
-# **Object expressions and declarations**
-
-- Object expressions and declarations
+### Object expressions and declarations
 - Object expressions
     - Creating anonymous objects from scratch
     - Inheriting anonymous objects from supertypes
@@ -311,14 +265,10 @@ Kotlin v1.9.22
     - Companion objects
     - Semantic difference between object expressions and declarations
  
-# **Delegation**
-
-- Delegation
+### Delegation
 - Overriding a member of an interface implemented by delegation
 
-# **Delegated properties**
-
-- Delegated properties
+### Delegated properties
 - Standard delegates
     - Lazy properties
     - Observable properties
@@ -331,13 +281,11 @@ Kotlin v1.9.22
     - Translation rules when delegating to another property
 - Providing a delegate
 
-# **Type aliases**
+### Type aliases
 
-===========================================================================
+---
 
-# 5. Null safety
-
-- Null safety
+## 5. Null safety
 - Nullable types and non-nullable types
 - Checking for null in conditions
 - Safe calls
@@ -347,29 +295,23 @@ Kotlin v1.9.22
 - Safe casts
 - Collections of a nullable type
 
-===========================================================================
+---
 
-# 6. Equality
-
-- Equality
+## 6. Equality
 - Structural equality
 - Referential equality
 - Floating-point numbers equality
 - Array equality
 
-===========================================================================
+---
 
-# 7. This expressions
-
-- This expressions
+## 7. This expressions
 - Qualified this
 - Implicit this
 
-===========================================================================
+---
 
-# 8. Scope functions
-
-- Scope functions
+## 8. Scope functions
 - Function selection
 - Distinctions
     - Context object: this or it
@@ -382,21 +324,17 @@ Kotlin v1.9.22
     - also
 - takeIf and takeUnless
 
-===========================================================================
+---
 
-# 9. Destructuring declarations
-
-- Destructuring declarations
+## 9. Destructuring declarations
 - Example: returning two values from a function
 - Example: destructuring declarations and maps
 - Underscore for unused variables
 - Destructuring in lambdas
 
-===========================================================================
+---
 
-# 10. Reflection
-
-- Reflection
+## 10. Reflection
 - JVM dependency
 - Class references
     - Bound class references
@@ -407,12 +345,10 @@ Kotlin v1.9.22
     - Constructor references
     - Bound function and property references
     - Bound constructor references
- 
-===========================================================================
 
-# 11. Time measurement
+---
 
-- Time measurement
+## 11. Time measurement
 - Calculate duration
     - Create duration
     - Get string representation
@@ -426,24 +362,20 @@ Kotlin v1.9.22
 - Time sources
     - Default time sources per platform
     - Create time source
- 
-===========================================================================
 
-# 12. Collections
+---
 
-- Collections overview
+## 12. Collections
 - Collection types
     - Collection
     - List
     - Set
     - Map
     - ArrayDeque
- 
-===========================================================================
 
-# 13. Opt-in requirements
+---
 
-- Opt-in requirements
+## 13. Opt-in requirements
 - Opt in to using API
     - Propagating opt-in
     - Non-propagating opt-in
@@ -452,11 +384,9 @@ Kotlin v1.9.22
     - Mark API elements
 - Opt-in requirements for pre-stable APIs
 
-===========================================================================
+---
 
-# 14. Annotations
-
-- Annotations
+## 14. Annotations
 - Usage
 - Constructors
 - Instantiation
@@ -468,24 +398,19 @@ Kotlin v1.9.22
     - Ability to not generate JVM 1.8+ annotation targets
 - Repeatable annotations
 
-===========================================================================
+---
 
-
-# 15. Asynchronous programming techniques
-
-- Asynchronous programming techniques
+## 15. Asynchronous programming techniques
 - Threading
 - Callbacks
 - Futures, promises, and others
 - Reactive extensions
 - CoRoutines
 
-===========================================================================
+---
 
-# 16. Collections bi' tık Advance a.k.a E.H.
-
-# **Constructing collections**
-
+## 16. Collections bi' tık Advance a.k.a E.H.
+### Constructing collections
 - Construct from elements
 - Create with collection builder functions
 - Empty collections
@@ -494,20 +419,14 @@ Kotlin v1.9.22
 - Copy
 - Invoke functions on other collections
 
-# **Iterators**
-
-- Iterators
+### Iterators
 - List iterators
 - Mutable iterators
 
-# **Ranges and progressions**
-
-- Ranges and progressions
+### Ranges and progressions
 - Progression
 
-# **Sequences**
-
-- Sequences
+### Sequences
 - Construct
     - From elements
     - From an Iterable
@@ -517,96 +436,70 @@ Kotlin v1.9.22
 - Sequence processing example
     - Iterable
     - Sequence
- 
-# **Collection operations overview**
 
+### Collection operations overview
 - Extension and member functions
 - Common operations
 - Write operations
 
-# **Collection transformation operations**
-
+### Collection transformation operations
 - Map
 - Zip
 - Associate
 - Flatten
 - String representation
 
-# **Filtering collections**
-
+### Filtering collections
 - Filter by predicate
 - Partition
 - Test predicates
 
-# **Plus and minus operators**
+### Plus and minus operators
 
-# **Grouping**
+### Grouping
 
-# **Retrieve collection parts**
-
+### Retrieve collection parts
 - Slice
 - Take and drop
 - Chunked
 - Windowed
 
-# **Retrieve single elements**
-
+### Retrieve single elements
 - Retrieve by position
 - Retrieve by condition
 - Retrieve with selector
 - Random element
 - Check element existence
 
-# **Ordering**
-
-- Ordering
+### Ordering
 - Natural order
 - Custom orders
 - Reverse order
 - Random order
 
-# **Aggregate operations**
-
-- Aggregate operations
+### Aggregate operations
 - Fold and reduce
 
-# **Collection write operations**
-
+### Collection write operations
 - Adding elements
 - Removing elements
 - Updating elements
 
-# **List-specific operations**
+### List-specific operations
+- Retrieve elements by index
+- Retrieve list parts
+- Find element positions
+    - Linear search
+    - Binary search in sorted lists
+- List write operations
+    - Add
+    - Update
+    - Remove
+    - Sort
 
-- **Retrieve elements by index**
-- **Retrieve list parts**
-- **Find element positions**
-    - **Linear search**
-    - **Binary search in sorted lists**
-- **List write operations**
-    - **Add**
-    - **Update**
-    - **Remove**
-    - **Sort**
- 
-# **List-specific operations**
+### Set-specific operations
 
-- **Retrieve elements by index**
-- **Retrieve list parts**
-- **Find element positions**
-    - **Linear search**
-    - **Binary search in sorted lists**
-- **List write operations**
-    - **Add**
-    - **Update**
-    - **Remove**
-    - **Sort**
- 
-# **Set-specific operations**
-
-# **Map-specific operations**
-
-- Retrieve keys and values
+### Map-specific operations
 - Retrieve keys and values
 - Filter
 - Plus and minus operators
@@ -614,12 +507,10 @@ Kotlin v1.9.22
     - Add and update entries
     - Remove entries
 
-===========================================================================
+---
 
-# 17. CoRoutines bi' tık Advance a.k.a E.H.
-
-# **Basics**
-
+## 17. CoRoutines bi' tık Advance a.k.a E.H.
+### Basics
 - Your first coroutine
     - Structured concurrency
 - Extract function refactoring
@@ -628,8 +519,7 @@ Kotlin v1.9.22
 - An explicit job
 - Coroutines are light-weight
 
-# **Shared mutable state and concurrency**
-
+### Shared mutable state and concurrency
 - The problem
 - Volatiles are of no help
 - Thread-safe data structures
@@ -637,8 +527,7 @@ Kotlin v1.9.22
 - Thread confinement coarse-grained
 - Mutual exclusion
 
-# **Cancellation and timeouts**
-
+### Cancellation and timeouts
 - Cancelling coroutine execution
 - Cancellation is cooperative
 - Making computation code cancellable
@@ -647,16 +536,14 @@ Kotlin v1.9.22
 - Timeout
 - Asynchronous timeout and resources
 
-# **Composing suspending functions**
-
+### Composing suspending functions
 - Sequential by default
 - Concurrent using async
 - Lazily started async
 - Async-style functions
 - Structured concurrency with async
 
-# **Coroutine context and dispatchers**
-
+### Coroutine context and dispatchers
 - Dispatchers and threads
 - Unconfined vs confined dispatcher
 - Debugging coroutines and threads
@@ -671,8 +558,7 @@ Kotlin v1.9.22
 - Coroutine scope
     - Thread-local data
 
-# **Asynchronous Flow**
-
+### Asynchronous Flow
 - Representing multiple values
     - Sequences
     - Suspending functions
@@ -713,8 +599,7 @@ Kotlin v1.9.22
     - Flow cancellation checks
 - Flow and Reactive Streams
 
-# **Channels**
-
+### Channels
 - Channel basics
 - Closing and iteration over channels
 - Building channel producers
@@ -726,8 +611,7 @@ Kotlin v1.9.22
 - Channels are fair
 - Ticker channels
 
-# **Coroutine exceptions handling**
-
+### Coroutine exceptions handling
 - Exception propagation
 - CoroutineExceptionHandler
 - Cancellation and exceptions
